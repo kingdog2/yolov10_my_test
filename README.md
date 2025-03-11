@@ -3,7 +3,7 @@
 
 本專案利用 YOLOv10 和 FastAPI 建立了一個 RESTful API 服務，實現 YOLOv10 物件偵測。
 ---
-您可以使用 client.py 發送圖片請求並獲得物件偵測結果，或使用 client_loop_fpsCheck.py 進行持續的 FPS 測試（小心不要讓伺服器過載！）。
+您可以使用 client.py 發送圖片請求並獲得物件偵測結果，或使用 client_loop_fpsCheck.py 進行持續的 FPS 測試（小心不要讓伺服器過載！）。\n
 此外，本專案也學習了新技術 ONNX，將模型的精度轉換為速度。這是第一次操作 ONNX，還有待加強，未來會進一步提升這項技術。
 ---
 
@@ -92,3 +92,5 @@ curl -X POST "http://127.0.0.1:8000/upload/" -F "file=@目錄/yolov10_api/aa.jpg
 - [影片連結](https://drive.google.com/file/d/1KHVDFF8zZjCJaMU2zpt9NWhrZ2kn8_c5/view?usp=drive_link)
 本實驗探索了ONNX技術以加快模型運行速度，但由於對ONNX技術尚不熟悉，尚未完全掌握。
 - [影片連結](https://drive.google.com/file/d/1xUCyAuZNDSDT_19ByO4JidSTP5Wy1PwP/view?usp=drive_link)
+## **🚀 6. 引用**
+https://github.com/THU-MIG/yolov10
