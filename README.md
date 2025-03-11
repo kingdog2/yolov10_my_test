@@ -5,7 +5,7 @@
 
 ---
 
-### 您可以使用 **client.py** 發送圖片請求並獲得物件偵測結果，或使用 **client_loop_fpsCheck.py** 進行持續的 FPS 測試（小心不要讓伺服器過載！）。
+### 可以使用 **client.py** 發送圖片請求並獲得物件偵測結果，或使用 **client_loop_fpsCheck.py** 進行持續的 FPS 測試（小心不要讓伺服器過載！）。
 
 ---
 
