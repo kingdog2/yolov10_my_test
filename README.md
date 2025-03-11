@@ -8,15 +8,15 @@
 
 ## **🚀 1. 安裝與設定**
 ### **1.1 環境需求**
-- Python 3.10+
+- Python 3.10
 - 支援 CUDA 的 GPU（本專案使用 CUDA 12.6，您可以根據需要調整版本）
-- 無需對外網路下載模型
 
 ### **1.2 安裝套件**
-請確保已安裝 **CUDA + cuDNN**，然後執行以下命令安裝所需的依賴：
+執行以下命令安裝所需的依賴：
 ```bash
 pip install -r requirements.txt
 ```
+然後請確保已安裝 **CUDA + cuDNN**
 接著，您可以運行 `check_pytorch_gpu.py` 來確認是否支援 CUDA。
 
 ---
@@ -46,14 +46,14 @@ python client.py
 ### **請求格式（JSON）**
 您可以使用以下命令進行請求：
 ```bash
-curl -X POST "http://127.0.0.1:8000/upload/" -F "file=@C:/Users/f2201/Downloads/yolov10_api/aa.jpg"
+curl -X POST "http://127.0.0.1:8000/upload/" -F "file=@目錄/yolov10_api/aa.jpg"
 ```
 
 ### **回應範例**
 成功回應：
 ```json
 {
-    "speed(second)": fps,
+    "speed(second)": speed,
     "filename": "aa.jpg",
     "message": "encoded_string"
 }
@@ -68,7 +68,7 @@ curl -X POST "http://127.0.0.1:8000/upload/" -F "file=@C:/Users/f2201/Downloads/
 
 ### 參數說明：
 - `image` 參數是以 base64 編碼的圖片數據。
-- `fps` 代表每秒處理的圖片數（處理速度）。
+- `speed(second)` 這裡指單張跑yolov10的時間，並非代表每秒處理的圖片數（處理速度）。
 - `filename` 是上傳圖片的檔名。
 - `message` 是物件偵測後的結果，通常以編碼字串形式返回。
 
