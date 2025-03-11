@@ -85,10 +85,9 @@ curl -X POST "http://127.0.0.1:8000/upload/" -F "file=@目錄/yolov10_api/aa.jpg
 ```
 
 ### 參數說明：
-- `image` 參數是以 base64 編碼的圖片數據。
 - `speed(second)` 這裡指單張跑yolov10的時間，並非代表每秒處理的圖片數（處理速度）。
 - `filename` 是上傳圖片的檔名。
-- `message` 是物件偵測後的結果，通常以編碼字串形式返回。
+- `message` 是物件偵測後的結果，以 base64 編碼的圖片數據。
 
 ---
 
