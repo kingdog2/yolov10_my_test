@@ -27,7 +27,7 @@ chmod +x install.sh
 ```
 
 然後請確保已安裝 **CUDA + cuDNN**
-接著，您可以運行 `check_pytorch_gpu.py` 來確認是否支援 CUDA。
+接著，您可以運行 `check_pytorch_gpu.py`以及`onnxruntime _ckeck_gpu.py` 來確認是否支援 CUDA。
 
 ---
 
