@@ -1,8 +1,8 @@
 
 # YOLOv10 物件偵測 API
 
-本專案利用 **YOLOv10** 和 **FastAPI** 建立了一個高效的 RESTful API 服務，並通過 ONNX Runtime 支援 GPU 推論，確保本機環境的 **FPS ≥ 10**。  
-您可以使用 **client.py** 發送圖片請求並獲得物件偵測結果，或使用 **client_loop_fpsCheck.py** 進行持續的 FPS 測試。
+本專案利用 **YOLOv10** 和 **FastAPI** 建立了一個RESTful API 服務能實現Yolov10物件偵測。  
+您可以使用 **client.py** 發送圖片請求並獲得物件偵測結果，或使用 **client_loop_fpsCheck.py** 進行持續的 FPS 測試(小心不要讓伺服器爆炸阿!!)。
 
 ---
 
@@ -85,6 +85,4 @@ curl -X POST "http://127.0.0.1:8000/upload/" -F "file=@目錄/yolov10_api/aa.jpg
 ---
 
 ## **🚀 4. 效能優化**
-- **使用 ONNX Runtime GPU** 來加速推論(用)。
-- **預先載入模型** 以避免記憶體無限增長。
 - **採用 FastAPI + Uvicorn** 提供高效能的 API 服務。
