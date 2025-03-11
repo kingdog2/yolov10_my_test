@@ -89,3 +89,5 @@ curl -X POST "http://127.0.0.1:8000/upload/" -F "file=@目錄/yolov10_api/aa.jpg
 
 ## **🚀 5. 成果展示**
 - [影片連結](https://drive.google.com/file/d/1KHVDFF8zZjCJaMU2zpt9NWhrZ2kn8_c5/view?usp=drive_link)
+本實驗探索了ONNX技術以加快模型運行速度，但由於對ONNX技術尚不熟悉，尚未完全掌握。
+- [影片連結](https://drive.google.com/file/d/1xUCyAuZNDSDT_19ByO4JidSTP5Wy1PwP/view?usp=drive_link)
