@@ -86,3 +86,6 @@ curl -X POST "http://127.0.0.1:8000/upload/" -F "file=@目錄/yolov10_api/aa.jpg
 
 ## **🚀 4. 效能優化**
 - **採用 FastAPI + Uvicorn** 提供高效能的 API 服務。
+
+## **🚀 5. 成果展示**
+- [影片連結](https://drive.google.com/file/d/1KHVDFF8zZjCJaMU2zpt9NWhrZ2kn8_c5/view?usp=drive_link)
