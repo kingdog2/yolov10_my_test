@@ -1,0 +1,15 @@
+# python 3.10 pytorch-cuda126
+# pip install git+https://github.com/THU-MIG/yolov10.git
+# pip install git+https://github.com/huggingface/huggingface_hub
+# pip install safetensors
+# pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu126
+# pip install fastapi
+# pip install python-multipart
+# pip install onnxruntime-gpu
+
+# pip freeze > requirements.txt
+# recv_file存放接收圖片
+# detect_img存放yolo detect後的圖片
+# run備份detect後的圖片
+
+##!!!!!!!!!!!!!!!cuda126 torch git+https://github.com/THU-MIG/yolov10.git
