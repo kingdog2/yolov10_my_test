@@ -16,6 +16,16 @@
 ```bash
 pip install -r requirements.txt
 ```
+或是
+賦予腳本執行權限：
+```bash
+chmod +x install.sh
+```
+執行腳本：
+```bash
+./install.sh
+```
+
 然後請確保已安裝 **CUDA + cuDNN**
 接著，您可以運行 `check_pytorch_gpu.py` 來確認是否支援 CUDA。
 
@@ -72,12 +82,9 @@ curl -X POST "http://127.0.0.1:8000/upload/" -F "file=@目錄/yolov10_api/aa.jpg
 - `filename` 是上傳圖片的檔名。
 - `message` 是物件偵測後的結果，通常以編碼字串形式返回。
 
-## **🚀 4. 測試圖片**
-請將您的 **圖片（1280x720）** 放入 `images/` 目錄，並在 `client.py` 中修改圖片路徑來選擇您要測試的圖片。
-
 ---
 
-## **🚀 5. 效能優化**
-- **使用 ONNX Runtime GPU** 來加速推論。
+## **🚀 4. 效能優化**
+- **使用 ONNX Runtime GPU** 來加速推論(用)。
 - **預先載入模型** 以避免記憶體無限增長。
 - **採用 FastAPI + Uvicorn** 提供高效能的 API 服務。
