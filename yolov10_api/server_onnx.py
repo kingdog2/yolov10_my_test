@@ -6,13 +6,12 @@ import time
 import base64
 from fastapi import FastAPI, File, UploadFile
 from starlette.responses import JSONResponse
-from ultralytics import YOLOv10
 import cv2
 import numpy as np
 import onnxruntime as ort
 
-# 載入 ONNX 模型
-onnx_model = ort.InferenceSession("yolov10n.onnx", providers=['CUDAExecutionProvider'])
+# 載入 ONNX 模型 CUDAExecutionProvider  CPUExecutionProvider
+onnx_model = ort.InferenceSession("yolov10n_int8_static.onnx", providers=['CUDAExecutionProvider'])
 print("模型載入成功")
 app = FastAPI()
 print("="*200)
@@ -45,7 +44,7 @@ def onnx_dectect(client_img):
     in_img, scale = ratioresize(image_rgb)
     in_img = in_img / 255.0 - 0.5
     in_img = np.transpose(in_img, (2, 0, 1))  # CHW
-    in_img = np.expand_dims(in_img, axis=0).astype(np.float32)
+    in_img = np.expand_dims(in_img, axis=0).astype(np.float32) # 輸入不會量化float32
 
     # 模型推理
     output = onnx_model.run(None, {'images': in_img})
