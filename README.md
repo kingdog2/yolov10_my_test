@@ -8,7 +8,7 @@
 
 ---
 ## **🚀 0. 最後一次更新**
-2025/03/13 10:50 更新了 ONNX 量化功能，新增 INT8 量化方法 quantize_static 和 quantize_dynamic，以及 FP16 支持。
+2025/03/13 10:50 更新了 ONNX 量化功能，新增 INT8 量化方法 quantize_static 和 quantize_dynamic，以及 FP16 支持。(輸入圖片保持FP32)
 
 ## **🚀 1. 安裝與設定**
 ### **1.1 環境需求**
