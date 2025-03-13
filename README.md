@@ -3,9 +3,8 @@
 
 ## 本專案利用 YOLOv10 和 FastAPI 建立了一個 RESTful API 服務，實現 YOLOv10 物件偵測。
 
----
 
-### 可以使用 **client.py** 發送圖片請求並獲得物件偵測結果，或使用 **client_loop_fpsCheck.py** 進行持續的 FPS 測試（小心不要讓伺服器過載！）。
+#### 可以使用 **client.py** 發送圖片請求並獲得物件偵測結果，或使用 **client_loop_fpsCheck.py** 進行持續的 FPS 測試（小心不要讓伺服器過載！）。
 
 ---
 ## **🚀 0. 最後一次更新**
